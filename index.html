@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hridhaan — Developer</title>
+
+  <!-- SEO description -->
+  <meta name="description" content="Hridhaan is a software developer.">
+
+  <!-- Favicon emoji -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💻</text></svg>">
+
+  <!-- Google Font (Inter) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<!-- Footer -->
+  <footer>Built by Hridhaan · 2025</footer>
+
+  <!-- Active nav highlight on scroll -->
+  <script>
+    const sections = document.querySelectorAll('section');
+    const navLinks = document.querySelectorAll('nav a');
+    window.addEventListener('scroll', () => {
+      let current = '';
+      sections.forEach(s => {
+        if (window.scrollY >= s.offsetTop - 80) current = s.id;
+      });
+      navLinks.forEach(a => {
+        a.classList.toggle('active', a.getAttribute('href') === '#' + current);
+      });
+    });
+  </script>
+
+<body>
+
+  <!-- NAVIGATION -->
+  <nav>
+    <span class="logo">Hridhaan</span>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <h1>Hi, I'm <span>Hridhaan</span> 👋</h1>
+    <p>I'm a software engineer always learning new skills.</p>
+    <a href="#projects" class="btn">See my work</a>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <h2>About me</h2>
+    <p>I'm a developer based in India. I'm currently learning web development
+    and building projects to grow my skills.</p>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project-grid">
+      <div class="card">
+        <h3>Project One</h3>
+        <p>A short description of what this project does and what you learned.</p>
+        <a href="#">View project →</a>
+      </div>
+      <div class="card">
+        <h3>Project Two</h3>
+        <p>A short description of what this project does and what you learned.</p>
+        <a href="#">View project →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <h2>Get in touch</h2>
+    <p>Feel free to reach out — I'm always open to new opportunities.</p>
+    <a href="mailto:hridhaanrathod35@gmail.com" class="btn">Email me</a>
+  </section>
+
+</body>
+</html>
